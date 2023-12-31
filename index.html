@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <title>Todo List</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-       
-        <link rel="stylesheet" href="style.css">
- 
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="todoApp.js"></script>
     </head>
     <body>
-        <header>
+        <main>
             <h1>Todo List</h1>
-        </header>
-        <!-- todo form -->
-        <form action="" class="todoForm">
-        
-            <input type="text" class="addTodo">
-            <button class="addTodoBtn" type="submit"><i class="fa-solid fa-circle-plus"></i></button>
-        </form>
-        <div class="selectContainer">
-            <div class="select">
-                <select name="todos" class="filterTodo">
-                    <option value="all">All</option>
-                    <option value="completed">Completed</option>
-                    <option value="unCompleted">Uncompleted</option>
-                </select>
+            <!-- todo form -->
+            <form class="todoForm">
+                <input type="text" class="addTodo" />
+                <button class="addTodoBtn" type="submit">
+                    <i class="fa-solid fa-circle-plus"></i>
+                </button>
+            </form>
+            <div class="selectContainer">
+                <div class="select">
+                    <select name="todos" class="filterTodo">
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="unCompleted">Uncompleted</option>
+                    </select>
+                </div>
             </div>
-        </div>
-        <!-- todo list container  -->
-        <div class="todoListContainer">
-            <ul class="todoList"></ul>
-        </div>
 
-
-        <script src="todoApp.js"></script>
+            <!-- todo list container  -->
+            <div class="todoListContainer">
+                <ul class="todoList"></ul>
+            </div>
+        </main>
     </body>
 </html>
